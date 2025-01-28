@@ -29,9 +29,6 @@ jobs:
           # Install Git (if not already installed)
           sudo yum install git -y
 
-          # Navigate to the desired directory (replace with actual path on EC2)
-          cd /home/ec2-user || mkdir /home/ec2-user
-
           # Clone the repository only if it does not already exist
           if [ ! -d "/home/ec2-user/your-repo" ]; then
             git clone https://github.com/farhan-shaukat/github-actions.git
